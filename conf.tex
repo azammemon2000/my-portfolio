@@ -1,0 +1,307 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{multirow}
+
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Technological, Financial and Ecological Analysis of Photovoltaic Power System using RETScreen \textsuperscript{\textregistered}\\
+{\footnotesize \textsuperscript{}A Case in Khuzdar, Pakistan}
+\thanks{Identify applicable funding agency here. If none, delete this.}
+}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Um-E-Habiba Alvi}
+\IEEEauthorblockA{\textit{Department of Electrical Engineering} \\
+\textit{PIEAS}\\
+Islamabad, Pakistan \\
+umehabiba\_18@pieas.edu.pk}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Ijaz Ahmed}
+\IEEEauthorblockA{\textit{Department of Electrical Engineering} \\
+\textit{PIEAS}\\
+Islamabad, Pakistan \\
+ijazahmed\_20@pieas.edu.pk}
+\and
+\IEEEauthorblockN{3\textsuperscript{th} Alveena Alvi}
+\IEEEauthorblockA{\textit{Department of Management and Economics} \\
+\textit{University of Aveiro}\\
+Aveiro, Portugal \\
+alwenaalvi@visit.uaveiro.eu}
+\and
+\IEEEauthorblockN{4\textsuperscript{th} Babar Ashfaq}
+\IEEEauthorblockA{\textit{Department of Mechanical Engineering} \\
+\textit{GIKI}\\
+Topi,KPK, Pakistan \\
+babar.ashfaq@yahoo.com}
+\and
+\IEEEauthorblockN{5\textsuperscript{rd} Sana Mukhtar}
+\IEEEauthorblockA{\textit{Department of Electrical Engineering} \\
+\textit{Sir Syed CASE Institute of Technology}\\
+Islamabad, Pakistan \\
+sanamukhtar10@gmail.com}
+\and
+\IEEEauthorblockN{6\textsuperscript{th} Paghunda Roheela Ali}
+\IEEEauthorblockA{\textit{Department of Electrical Engineering} \\
+\textit{PIEAS}\\
+Islamabad, Pakistan \\
+paghundaali\_21@pieas.edu.pk}
+}
+
+\maketitle
+
+\begin{abstract}
+Green energy projects can benefit greatly from using RETScreen as a preliminary estimate for financial analysis and technology assessment. Energy shortages and climate change are wreaking havoc in Pakistan at the present time. In this study, we examine green energy sources to meet the country's energy needs while keeping environmental concerns in mind. The NASA climate information is used to conduct a comprehensive technical, economical, and environmental analysis of the intended green plant. In addition, the statistical indications demonstrate that the project is feasible in terms of cost-emission-savings. It is anticipated that this strategy will make it easier to start new renewable energy projects in developing countries that are having difficulty developing renewable energy projects. The study will also encourage the investor and corporate sector to join national grid from a business perspective. Furthermore, the scheme will also assist government institutions in reducing their reliance on fuel based plants, so bolstering the state economy and provide clean and cost effective energy.
+
+
+%%% I WILL WRITE MORE ONCE I AM DONE WITH OTHER STUFFS
+
+%%%%%%     C H A N G E    %%%%%%
+%In the first case the electricity price was set to 3.75 Cents/kWh (450 Rial/kWh) and no credit was assigned to the reduction of greenhouse gasses (GHG), therefore equity payback (Return positive cash flow) has been 12.1 year. In the second case the electricity price was set to 17.5 Cents/kWh, therefore equity payback (return positive cash flow) was 8 year. Finally in the last scenario by considering a credit to the reduction of greenhouse gasses and electricity price being 175 Cents/kWh and applying solar panels with high efficiency and suitable batteries (DOD = 60%), equity payback (return positive cash flow) reached within 6 years.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Greenhouse gases, solar energy, RETscreen, Photovoltaic, energy crises and solar inverters.
+\end{IEEEkeywords}
+
+\section{Introduction}
+As the national electric grid tariff has progressively increased in recent years, there has been a growing trend toward the adoption of renewable energy sources throughout Pakistan \cite{1,nn1,nnn2,nnn3,nnn4}. According to a recent study in \cite{2}, the state is experiencing acute electrical shortages of up to 7,000 MW, which eventually affects all facets of society. The state, on the other hand, welcomed fossil fuel-powered independent power facilities to contribute in meeting the country energy demand. These plants are mostly powered by fossil fuels, which pollute the atmosphere and contribute to smog and the greenhouse effect \cite{3}. Additionally, it is imperative to create renewable and eco-friendly energy systems in order to meet the demand for electricity \cite{4}.\newline
+Balochistan is the biggest provenience of Pakistan by land, with many rural villages and districts, which need a stand-alone power generation infrastructure to meet the needs of the end user or these remote locations \cite{5}. Due to the extensive length of the power lines, the high operational costs of the grids, and the lack of roads in this region, the distribution of electricity becomes exceedingly impractical \cite{ali2015modeling}. Standalone power generating is the only sole option that guarantees the uninterrupted electricity supply for such places. The traditional and renewable energy systems can both be used to generate stand-alone electric energy. Although fossil fueled power plants are commonly used in the traditional energy system, but their emissions and high fuel costs are a major drawback. To lower the operational costs of fuel and emissions of plants, a lot of research have been been proposed in past \cite{ahmed2014performance,alvi2022novel,ahmed3914038multi,ahmed2022novel}. The independent renewable energy system can produce electricity with zero carbon footprints, however this type of energy generation is highly dependent on the presence of resources such as solar irradiation, wind velocity, and temperature.\newline
+Balochistan solar energy potential for stand-alone electricity generation is explored in a variety of publications \cite{urooj2017assessment,ismail2014optimal}. For the month of December in Balochistan, the lowest solar radiation intensity was recorded 1.3 KW/$m^2$ in Jiwani and the peak in June was 3.2 KW/$m^2$. A year-round solar radiation intensity of more than 1.5 KW/$m^2$ was reported except in the northern regions for spring season. From $3rd$ to $9th$ month, a solar radiation density of more than 2 KW/$m^2$ was recorded. Through the year, the yearly range of monthly average solar radiations is between 1.53 KW/$m^2$ and 2.81 KW/$m^2$.\newline
+The primary purpose of this investigation is to design a model for a solar energy system with a capacity of mega-watt $10^6$ (KW) at the site location of Khuzdar, in the province of Balochistan, based on a power system that operates independently. The procedure of the study was mostly based on the programme RETScreen, which is an analytical tool for clean energy projects and extensively used in many \textcolor{red}{research \cite{mirzahosseini2012environmental,moya2018technical,pan2017feasibility,owolabi2019validating}} . This tool assists with the technical and financial feasibility studies on a variety of renewable resources. The most important charitable implications of this investigation are as follows:
+\begin{enumerate}
+    \item Considering the real-time atmospheric conditions of the site (Balochistan, Kuzdar), a detailed feasibility analysis is presented for the proposed renewable energy system in order to achieve energy exported to the grid in MWh, electricity revenue in \$, and  reduction in greenhouse gas emissions.
+    \item By using RETScreen \textsuperscript{\textregistered} intelligent algorithm for benchmark a comparative analysis of proposed system with other traditional energy hubs is also presented.
+    \item The proposed system helps the energy policy makers and grid operator to design zero carbon footprint stand-alone lossless systems.
+    \item The proposed system design also help to reduce the dependency on imported fuels and play a vital role to strengthen state GDP.
+
+\end{enumerate}
+\section{RETScreen Software}
+The RETScreen is a green energy analysis suite developed by Canadian government and utilized world-wide for manipulation of photovoltaic energy productivity, photovoltaic equipment life-span tariffs and GHG emission reductions for on grid and off grid solar energy systems.\newline
+The RETScreen software considers factors such as the energy resource that is available at the worksite, the competence of the machinery, the planning phase finance, the "base scenario" credits, the on-going and periodic project costs, the prevented price of energy, raising capital, taxes on machinery and earnings \cite{samuel2021techno}. Numerous studies have used RETScreen software package to assess the profitability of renewable power as a power generation source. For instance, Li et al.\cite{li2021evaluation}, evaluated the risk assessment for power systems in china. The simulation demonstrates that current energy operating costs are 30.8 percent more than the grid's available electricity. They also concluded, at least 1423 tonnes of greenhouse gas emissions might be prevented each year in any region of that country. Using RETScreen modelling software, a 10 MW solar power station in Abu Dhabi with huge electricity generation capacity, producing 24 GWh and eliminating over 10,000 tonnes of greenhouse gas emissions per year might be constructed, according to an astounding study published in \cite{sreenath20217e}. In Marshy region of Bangladesh, RETScreen software was used by Chowdhary et al. [5] to assess a photovoltaic Power generation.
+They conduct a financial evaluation of the proposed pv system in Bangladesh's Sirajganj district, including the total annual savings, income, and annual costs. Many studies, both engineering and commercial, use RETScreen, including those on photovoltaic, wind, and nuclear power generation \cite{riaz2021techno}.\newline
+Therefore, to assess the budgetary viability of a design, RETScreen analyzes the proposed design to a baseline plan.
+Typically, the proposed plan employs a green energy technology, whereas the baseline scenario employs a traditional energy source technology. A RETScreen examination of a energy plant entails a number of distinct processes \cite{kalkal2022sustainable,n2022effect}. The following are the RETScreen procedures for the proposed power plant:
+\begin{enumerate}
+    \item First, Users describe the energy demand and base scenario energy system specifications.
+    \item Second, the user defines the presented-case energy study validity, as well as the extra funds, running, and service expenditures that are required to implement it.
+    \item In this step, user choose working framework for presented energy system.
+    \item This step provides RETScreen results.
+    \item In the fifth step, a greenhouse gas assessment can be done to see if the designed plan reduces emissions more than the base plan.
+    \item Finally, a financial overview analyses if the project is financially viable.
+\end{enumerate}
+To create a green energy system for the 2,833 residents of Khuzadar village Tootak, a 1 MW photovoltaic system is planned for residential users. As indicated in Fig 1, this power plant is physically located at Latitude: 27.8, Longitude: 66.616 with climate zone 2B - Hot - Dry and elevation 1242 meters above sea.
+\begin{figure}[htbp]
+\centerline{\includegraphics[scale=.55]{1.png}}
+\caption{ Geographical location of Proposed system}
+%\label{fig}
+\end{figure}
+\section{Proposed System Design}
+This section provides information regarding the proposed system setup.
+\subsection{Photovoltaic cells Modules}
+Solar panels can be classified as either monocrystalline, polycrystalline, or thin-film, depending on their crystalline structure. Each type has its own benefits and drawbacks, and the sort of solar panels that will work best for your installation will depend on site- and application-specific factors. In this study, we consider HiKu7 Mono PERC solar panel, economically effective for utility power with better shading tolerance. The proposed system panels specification is depicted in Table I, where the I-V curves with different atmospheric temperature are shown in Fig 2.
+\begin{figure}[htbp]
+\centerline{\includegraphics[scale=.55]{2.png}}
+\caption{V-I curves for HiKu7 Mono PERC 650MS }
+%\label{fig}
+\end{figure}
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Nominal Max. Powe      & 640 W   \\ \hline
+Opt. Operating Voltag  & 37.5 V  \\ \hline
+Opt. Operating Current & 17.07 A \\ \hline
+Open Circuit \textcolor{red}{Voltage}    & 44.6 V  \\ \hline
+Short Circuit Current  & 18.31 A \\ \hline
+Module Efficiency      & 20.6\%  \\ \hline
+\end{tabular}
+\caption{650 (ELECTRICAL DATA) }
+\label{tab:my-table}
+\end{table}
+\subsection{The charge controller and the inverter}
+The charge controller is employed to regulate the flow of electricity from the panels to the storage bank. – The charge-primary controller job is to keep the storage safe from both over-discharge and over-charging. The ABB FIMER 1MW PVS 980 Central Inverter Solar String Inverter proposed for this project is based on the output voltage of the solar power plant's installed panels. The proposed system panels technical specification is depicted in Table II.
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\begin{tabular}[c]{@{}c@{}}Max. allowed \\ PV field power\end{tabular}          & 1600 kWp                  \\ \hline
+\begin{tabular}[c]{@{}c@{}}Max. DC Power/Nominal\\  AC Power ratio\end{tabular} & 160\%                     \\ \hline
+\begin{tabular}[c]{@{}c@{}}DC Voltage \\ range MPP\end{tabular}                 & 935-1300 V                \\ \hline
+\begin{tabular}[c]{@{}c@{}}Max. Permissible\\  DC voltage\end{tabular}          & 1500 Vdc                  \\ \hline
+Nominal AC voltage                                                              & 660v                      \\ \hline
+\begin{tabular}[c]{@{}c@{}}Type of Phase \\ Connection\end{tabular}             & 3 Phase, 3 Wire , IT type \\ \hline
+\end{tabular}
+\caption{Inverter Specification}
+\label{tab:my-table}
+\end{table}
+\subsection{Solar Modeling}
+The output energy of solar panels mainly dependant on the amount of sun radiation panel received and atmospheric temperature. we utilized beta distribution to model the outcome of generated electricity. The mathematical representation is as follow:
+\begin{equation*}\label{h}
+{SP_{\left( {\beta} \right)}}\left( \varrho  \right) = \left\{ \begin{array}{l}
+\frac{{\Gamma \left( {r + \zeta Z} \right)}}{{\Gamma \left( r \right)\Gamma \left( {\zeta Z} \right)}} \times {\varrho ^{r - 1}}{\left( {1 - \varrho } \right)^{\zeta Z - 1}}\\
+for\hspace{4mm}0 \le \varrho  \le 1,\hspace{5mm}r \ge 0,\zeta Z \ge 0\\
+0,\hspace{27mm}otherwise
+\end{array} \right.
+\end{equation*}
+\section{Results and Simulation}
+RETScreen, which is built on Microsoft Excel, is a potent research framework. It is utilized to examine the operational and economical viability of all sustainable energy initiatives, from the lowest to highest. This is the first phase, which is completed using Google Maps. Our objective is to find in or around the Khuzdar Valley, and Table III displays climatic data. Since NASA's satellite-derived climatological and renewable photovoltaic statistics have been meticulously recorded for the previous 10 years, all of the supplied meteorological data is accurate. Figure \ref{fig3} and Table \ref{tab11}, show that Khuzdar is a great location for proposed photovoltaic design, with an annual average wind speed of 5.47 KW/$m^2$/day.
+\begin{figure}[!]
+\centerline{\includegraphics[scale=.55]{fig2.jpg}}
+\caption{Climate data recorded from NASA satellite}
+\label{fig3}
+\end{figure}
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+
+Table \ref{tab11} represents the climate data recorded from NASA satellite for Khuzdar, Pakistan for 12 months. Daily solar radiation was 4 $KWh/m^2 / d$ with around 17 $(C)$ air temperature value.  The highest value of daily solar radiation and  air temperature achieved was 6.8 $KWh/m^2 / d$ and 29 $(C)$ respectively in the months of May and June. These values reduced in December to around 3.8  $KWh/m^2 / d$ and 16 $(C)$ respectively.
+Table \ref{tab11} shows a monthly summary of Khuzdar climate data from NASA. All of the statistics in the climate are credible since they come from NASA's satellite-derived metrological and solar energy dataset, which has been recorded for one year.
+An annual air temperature was observed to be 21.5 $C$, relative humidity of 27.6 $\%$, 152.14 mm Precipitation , 5.47 daily solar radiation, 87.4 $kPa$ atmospheric pressure, 22.9 $C$ Earth temperature, 663 $C (C-d)$ heating degree and 4214 $C (C-d)$ cooling degree.
+\begin{table}[!]
+\scriptsize
+\begin{tabular}{|ccccc|}
+\hline
+\multicolumn{5}{|l|}{\multirow{3}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Heating design temperature         5.3\\ Cooling design temperature         37.3    Source: NASA\\ Earth temperature amplitude      26.1\end{tabular}}}}                                                                                                                             \\
+\multicolumn{5}{|l|}{}                                                                                                                                                                                                                                                                                                                                       \\
+\multicolumn{5}{|l|}{}                                                                                                                                                                                                                                                                                                                                       \\ \hline
+\multicolumn{1}{|c|}{Month}     & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Air \\ Temperature\end{tabular}}     & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Relative\\ Humindity\end{tabular}} & \multicolumn{1}{c|}{Precipitation}                                            & \begin{tabular}[c]{@{}c@{}}Daily \\ Solar Radiation\end{tabular} \\ \hline
+\multicolumn{1}{|c|}{January}   & \multicolumn{1}{c|}{9.9}                                                            & \multicolumn{1}{c|}{35.5}                                                         & \multicolumn{1}{c|}{13.02}                                                    & 4.02                                                             \\ \hline
+\multicolumn{1}{|c|}{February}  & \multicolumn{1}{c|}{12.2}                                                           & \multicolumn{1}{c|}{33.7}                                                         & \multicolumn{1}{c|}{14.28}                                                    & 4.87                                                             \\ \hline
+\multicolumn{1}{|c|}{March}     & \multicolumn{1}{c|}{14.4}                                                           & \multicolumn{1}{c|}{28.7}                                                         & \multicolumn{1}{c|}{12.09}                                                    & 5.54                                                             \\ \hline
+\multicolumn{1}{|c|}{April}     & \multicolumn{1}{c|}{23.2}                                                           & \multicolumn{1}{c|}{22.0}                                                         & \multicolumn{1}{c|}{12.60}                                                    & 6.34                                                             \\ \hline
+\multicolumn{1}{|c|}{May}       & \multicolumn{1}{c|}{28.3}                                                           & \multicolumn{1}{c|}{16.4}                                                         & \multicolumn{1}{c|}{6.20}                                                     & 6.81                                                             \\ \hline
+\multicolumn{1}{|c|}{June}      & \multicolumn{1}{c|}{31.1}                                                           & \multicolumn{1}{c|}{21.2}                                                         & \multicolumn{1}{c|}{7.20}                                                     & 6.82                                                             \\ \hline
+\multicolumn{1}{|c|}{July}      & \multicolumn{1}{c|}{30.5}                                                           & \multicolumn{1}{c|}{36.5}                                                         & \multicolumn{1}{c|}{31.62}                                                    & 6.40                                                             \\ \hline
+\multicolumn{1}{|c|}{August}    & \multicolumn{1}{c|}{28.7}                                                           & \multicolumn{1}{c|}{40.1}                                                         & \multicolumn{1}{c|}{35.34}                                                    & 6.11                                                             \\ \hline
+\multicolumn{1}{|c|}{September} & \multicolumn{1}{c|}{26.4}                                                           & \multicolumn{1}{c|}{27.3}                                                         & \multicolumn{1}{c|}{8.70}                                                     & 5.64                                                             \\ \hline
+\multicolumn{1}{|c|}{Octobor}   & \multicolumn{1}{c|}{21.7}                                                           & \multicolumn{1}{c|}{17.8}                                                         & \multicolumn{1}{c|}{0.93}                                                     & 5.14                                                             \\ \hline
+\multicolumn{1}{|c|}{November}  & \multicolumn{1}{c|}{16.5}                                                           & \multicolumn{1}{c|}{22.3}                                                         & \multicolumn{1}{c|}{2.10}                                                     & 6.29                                                             \\ \hline
+\multicolumn{1}{|c|}{December}  & \multicolumn{1}{c|}{12.0}                                                           & \multicolumn{1}{c|}{29.4}                                                         & \multicolumn{1}{c|}{8.06}                                                     & 3.69                                                             \\ \hline
+\multicolumn{1}{|c|}{Annual}    & \multicolumn{1}{c|}{21.5}                                                           & \multicolumn{1}{c|}{27.6}                                                         & \multicolumn{1}{c|}{152.14}                                                   & 5.47                                                             \\ \hline
+\multicolumn{1}{|c|}{Month}     & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Atmospheric\\ Pressure\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Earth\\ Temperature\end{tabular}}  & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Heating\\ Degree\end{tabular}} & \begin{tabular}[c]{@{}c@{}}Cooling\\ Degree\end{tabular}         \\ \hline
+\multicolumn{1}{|c|}{January}   & \multicolumn{1}{c|}{87.8}                                                           & \multicolumn{1}{c|}{9.6}                                                          & \multicolumn{1}{c|}{251}                                                      & 0                                                                \\ \hline
+\multicolumn{1}{|c|}{February}  & \multicolumn{1}{c|}{87.7}                                                           & \multicolumn{1}{c|}{12.4}                                                         & \multicolumn{1}{c|}{162}                                                      & 62                                                               \\ \hline
+\multicolumn{1}{|c|}{March}     & \multicolumn{1}{c|}{87.6}                                                           & \multicolumn{1}{c|}{18.3}                                                         & \multicolumn{1}{c|}{19}                                                       & 229                                                              \\ \hline
+\multicolumn{1}{|c|}{April}     & \multicolumn{1}{c|}{87.4}                                                           & \multicolumn{1}{c|}{24.9}                                                         & \multicolumn{1}{c|}{0}                                                        & 396                                                              \\ \hline
+\multicolumn{1}{|c|}{May}       & \multicolumn{1}{c|}{87.2}                                                           & \multicolumn{1}{c|}{30.9}                                                         & \multicolumn{1}{c|}{0}                                                        & 567                                                              \\ \hline
+\multicolumn{1}{|c|}{June}      & \multicolumn{1}{c|}{86.8}                                                           & \multicolumn{1}{c|}{34.3}                                                         & \multicolumn{1}{c|}{0}                                                        & 633                                                              \\ \hline
+\multicolumn{1}{|c|}{July}      & \multicolumn{1}{c|}{86.7}                                                           & \multicolumn{1}{c|}{33.7}                                                         & \multicolumn{1}{c|}{0}                                                        & 636                                                              \\ \hline
+\multicolumn{1}{|c|}{August}    & \multicolumn{1}{c|}{86.9}                                                           & \multicolumn{1}{c|}{31.2}                                                         & \multicolumn{1}{c|}{0}                                                        & 580                                                              \\ \hline
+\multicolumn{1}{|c|}{September} & \multicolumn{1}{c|}{87.2}                                                           & \multicolumn{1}{c|}{28.3}                                                         & \multicolumn{1}{c|}{0}                                                        & 482                                                              \\ \hline
+\multicolumn{1}{|c|}{Octobor}   & \multicolumn{1}{c|}{87.7}                                                           & \multicolumn{1}{c|}{22.4}                                                         & \multicolumn{1}{c|}{0}                                                        & 363                                                              \\ \hline
+\multicolumn{1}{|c|}{November}  & \multicolumn{1}{c|}{87.9}                                                           & \multicolumn{1}{c|}{16.3}                                                         & \multicolumn{1}{c|}{45}                                                       & 195                                                              \\ \hline
+\multicolumn{1}{|c|}{December}  & \multicolumn{1}{c|}{87.9}                                                           & \multicolumn{1}{c|}{11.3}                                                         & \multicolumn{1}{c|}{186}                                                      & 62                                                               \\ \hline
+\multicolumn{1}{|c|}{Annual}    & \multicolumn{1}{c|}{87.4}                                                           & \multicolumn{1}{c|}{22.9}                                                         & \multicolumn{1}{c|}{663}                                                      & 4214                                                             \\ \hline
+\end{tabular}
+\caption{A monthly summary of Khuzadar Climate Data from NASA}
+\label{tab11}
+\end{table}
+The data shows that the class A and higher are the ideal for solar photovoltaic. The radiation density is also significant because of the co climate, as power is directly connected to radiation density.
+The more radiation there is, the more power will be generated.
+\subsection{Financial Analysis}
+A system profitability can be determined through economic information. In terms of reliability, this is by far the most essential step. Evaluation of financial characteristics, such as the net income, cash flows, and accounting records, is used to determine the stability of the power system and viability. Table IV presents a comprehensive analysis of the practicability of the planned design project from a financial perspective. Table \ref{tt}, demonstrates that the cumulative sum has a positive indication and it also depicts that net profit will begin as the project become operational.
+\begin{table}[!]
+\scriptsize
+\begin{tabular}{|llll|}
+\hline
+\multicolumn{4}{|c|}{\textbf{Financial parameters}}                                                                                                                                                                                                                   \\ \hline
+\multicolumn{2}{|l|}{General}                                                                                                            & \multicolumn{2}{l|}{\begin{tabular}[c]{@{}l@{}}Annual Cost\\ and \\ Debit Payments\end{tabular}}                           \\ \hline
+\multicolumn{1}{|l|}{Inflation rate}                                                                & \multicolumn{1}{l|}{2\%}           & \multicolumn{1}{l|}{O\&M}                                                                             & 1000000\$          \\ \hline
+\multicolumn{1}{|l|}{Discount rate}                                                                 & \multicolumn{1}{l|}{9\%}           & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Electricity export\\  revenue\end{tabular}}            & 14690520\$         \\ \hline
+\multicolumn{1}{|l|}{\begin{tabular}[c]{@{}l@{}}Reinvestment\\ rate\end{tabular}}                   & \multicolumn{1}{l|}{9\%}           & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Pre-tax \\ IRR - equity\end{tabular}}                  & Positive           \\ \hline
+\multicolumn{1}{|l|}{Project life}                                                                  & \multicolumn{1}{l|}{20 Years}      & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Pre-tax \\ MIRR - equity\end{tabular}}                 & Positive           \\ \hline
+\multicolumn{1}{|l|}{Finance}                                                                       & \multicolumn{1}{l|}{}              & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Pre-tax \\ IRR - assets\end{tabular}}                  & Positive           \\ \hline
+\multicolumn{1}{|l|}{Debt ratio}                                                                    & \multicolumn{1}{l|}{70\%}          & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Pre-tax \\ MIRR - assets\end{tabular}}                 & Positive           \\ \hline
+\multicolumn{1}{|l|}{\begin{tabular}[c]{@{}l@{}}Debt interest\\ rate\end{tabular}}                  & \multicolumn{1}{l|}{7\%}           & \multicolumn{1}{l|}{Simple payback}                                                                   & Immediate          \\ \hline
+\multicolumn{1}{|l|}{Debt term}                                                                     & \multicolumn{1}{l|}{15 Years}      & \multicolumn{1}{l|}{Equity payback}                                                                   & Immediate          \\ \hline
+\multicolumn{1}{|l|}{Annual Revenue}                                                                & \multicolumn{1}{l|}{}              & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Net Present\\  Value (NPV)\end{tabular}}               & 146,597,757\$      \\ \hline
+\multicolumn{1}{|l|}{\begin{tabular}[c]{@{}l@{}}Electricity \\ exported to grid\end{tabular}}       & \multicolumn{1}{l|}{146,905 MWh}   & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Annual life \\ cycle savings\end{tabular}}             & 16,059,267\$/years \\ \hline
+\multicolumn{1}{|l|}{\begin{tabular}[c]{@{}l@{}}Electricity \\ export rate\end{tabular}}            & \multicolumn{1}{l|}{0.10 \$/KWh}   & \multicolumn{1}{l|}{Median}                                                                           & 146,574,743\$      \\ \hline
+\multicolumn{1}{|l|}{\begin{tabular}[c]{@{}l@{}}Electricity \\ export revenue\end{tabular}}         & \multicolumn{1}{l|}{14,690,520 \$} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Minimum within\\ level\\ of confidence\end{tabular}}   & 119,846,702\$      \\ \hline
+\multicolumn{1}{|l|}{\begin{tabular}[c]{@{}l@{}}Electricity \\ export escalation rate\end{tabular}} & \multicolumn{1}{l|}{2\%}           & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Maximum within\\  level \\ of confidence\end{tabular}} & 177,366,952\$      \\ \hline
+\end{tabular}
+\caption{ Financial Analysis of Proposed Project}
+\label{tab:my-table}
+\end{table}
+Wage growth each year far outweigh management and maintenance expenses as well as annual debt interest obligations. According to Figure. \ref{fig4}, profits will begin as soon as the project is launched and reach a break even threshold. Regardless of whether the investor takes out a financing from corporate organizations or invests their own money, the firm is secure and productive.
+\begin{table}[!]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Year\\ \#\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Pre-tax\\ \$\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Cumulative\\ \$\end{tabular}} \\ \hline
+1                                                          & 13,964,330                                                    & 13,964,330                                                       \\ \hline
+2                                                          & 14,243,617                                                    & 28,207,947                                                       \\ \hline
+3                                                          & 14,528,489                                                    & 42,736,437                                                       \\ \hline
+4                                                          & 14,819,059                                                    & 57,555,496                                                       \\ \hline
+5                                                          & 15,115,440                                                    & 72,670,936                                                       \\ \hline
+6                                                          & 15,417,749                                                    & 88,088,685                                                       \\ \hline
+7                                                          & 15,726,104                                                    & 103,814,789                                                      \\ \hline
+8                                                          & 16,040,626                                                    & 119,855,416                                                      \\ \hline
+9                                                          & 16,361,439                                                    & 136,216,854                                                      \\ \hline
+10                                                         & 16,688,667                                                    & 152,905,522                                                      \\ \hline
+11                                                         & 17,022,441                                                    & 169,927,963                                                      \\ \hline
+12                                                         & 17,362,890                                                    & 187,290,852                                                      \\ \hline
+13                                                         & 17,710,147                                                    & 205,001,000                                                      \\ \hline
+14                                                         & 18,064,350                                                    & 223,065,350                                                      \\ \hline
+15                                                         & 18,425,637                                                    & 241,490,988                                                      \\ \hline
+16                                                         & 18,794,150                                                    & 260,285,138                                                      \\ \hline
+17                                                         & 19,170,033                                                    & 279,455,171                                                      \\ \hline
+18                                                         & 19,553,434                                                    & 299,008,605                                                      \\ \hline
+19                                                         & 19,944,502                                                    & 318,953,107                                                      \\ \hline
+20                                                         & 20,343,393                                                    & 339,296,500                                                      \\ \hline
+\end{tabular}
+\caption{Yearly cash flows}
+\label{tt}
+\end{table}
+\begin{figure}[!]
+\centerline{\includegraphics[scale=.55]{fig1.jpg}}
+\caption{Cash flow - Cumulative}
+\label{fig4}
+\end{figure}
+\subsection{Emission Reduction}
+Aside from their role in climate change, traditional power plants' emissions also play a role in respiratory diseases caused by smog and pollution \cite{sm,ds}. Another result of climate change produced by greenhouse gases includes heatwaves and sever storms. Energy has not been the primary preoccupation of earthlings till now \cite{lii}. Since 1994, Pakistan has been a signatory to the United Nations Framework convention on climate change, and the Pakistan environmental protection agency has enacted stringent regulations on industrial emissions \cite{ejaz2022understanding}. The comparative result demonstrates that the suggested design produces significantly fewer greenhouse gas emissions than the base case, which is a coal-fired power plant. The comparative analysis for emission reduction is shown in Table \ref{tab12} and depicted in Figure \ref{fee}.
+\begin{table}[!]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Base Case} & \textbf{Proposed Case} & \textbf{\begin{tabular}[c]{@{}c@{}}Gross annual GHG\\ emission reduction\end{tabular}} \\ \hline
+\textbf{tC$O_2$}   & \textbf{tC$O_2$}       & \textbf{tC$O_2$}                                                                       \\ \hline
+64,624.2           & 4,523.7                & 60.100.5                                                                               \\ \hline
+100\%              & 7\%                    & 93\%                                                                                   \\ \hline
+\end{tabular}
+\caption{Emission summary of proposed design}
+\label{tab12}
+\end{table}
+\begin{figure}[!]
+\centerline{\includegraphics[scale=.39]{ee.png}}
+\caption{Emission summary}
+\label{fee}
+\end{figure}
+\subsection{Risk Analysis}
+The risk analysis indicates the likelihood of project financial characteristics unpredictability. It also provides a numerical evaluation of whether or not a design will be a success in term of financial aspect. The cost information of designed scheme is already tabulated in Table IV. Figure \ref{fig34} and \ref{35} depicts a statistical breakdown of the entire design cash flow. There are positive standard deviations in the overall cash flows, which indicates the design has been successful.
+\begin{figure}[!]
+\centerline{\includegraphics[scale=.39]{rm.png}}
+\caption{Risk Analysis}
+\label{fig34}
+\end{figure}
+\begin{figure}[!]
+\centerline{\includegraphics[scale=.39]{rs2.png}}
+\caption{Distribution}
+\label{fig34}
+\end{figure}
+\section{Conclusion}
+Pakistan is abundant with land and natural assets. Balochistan is located in Pakistan on the south-eastern portion of the Iranian plateau and is ideally suited for renewable energy projects. In this article, a comprehensive technological, financial, and environmental analysis of a photovoltaic power system employing RETScreen is presented. The results indicate that these future green power sources are the optimal solution for environmental concerns.
+A project must always begin with a thorough feasibility study that encompasses all costs and a risk analysis. The statistical investigation indicates that the designed solar power plant positive feasibility in terms of all costs and a risk analysis. Although the initial investment is somewhat significant, investors might gain access to lucrative business opportunities with careful planning and evaluation.
+\section*{Acknowledgment}
+I cannot adequately express my appreciation to Dr. Muhammad Rehan for his tremendous tolerance and suggestions. I would not have been able to go on this path without him. I am also grateful to my co-authors, particularly my sister Alveena Alvi, for her editing assistance, early feedback sessions on financial aspects, and encouragement. It would be improper of me not to mention my family, particularly my parents, spouse. Their confidence in me has maintained my morale and enthusiasm strong throughout this endeavour..
+\bibliographystyle{ieeetr}
+\bibliography{references}
+
+\end{document}
